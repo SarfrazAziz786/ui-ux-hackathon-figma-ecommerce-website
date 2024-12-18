@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        poppins: ['Poppins', 'sans-serif'],
+        Poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         background: "var(--background)",

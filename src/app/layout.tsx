@@ -4,13 +4,6 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer/footer";
 
-import {Poppins } from "next/font/google";
-const poppins = Poppins({
-  weight: ['400', '700'],
-  style: 'normal',
-  subsets: ['latin'],
-  display: 'swap'
-});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

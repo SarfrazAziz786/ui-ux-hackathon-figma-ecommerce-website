@@ -4,6 +4,7 @@ import shopbg from '@/app/assets/shop page/heroSection.png'
 import logo from '@/app/assets/Meubel House_Logos-05.jpg'
 import Link from 'next/link'
 import ContactForm from '../components/ContactForm/contactForm'
+import Features from '../components/shoppageComponent/features'
 
 const Contact = () => {
   return (
@@ -14,25 +15,29 @@ const Contact = () => {
             
 
         <div className="relative z-10 text-black">
-          <h1 className="text-3xl font-bold">Checkout</h1>
+          <h1 className="text-3xl font-bold">Contact</h1>
           <nav className="flex items-center justify-center space-x-2 mt-2 text-sm">
             <Link href="/" className="hover:underline text-black font-Poppins font-medium ">
               Home
             </Link>
             <span className='text-black'>&gt;</span>
-            <span className="text-gray-700">Checkout</span>
+            <span className="text-gray-700">Contact</span>
           </nav>
         </div>
       </div>
 
 
       
-      <div className='w-[1440px] h-[1144px] bg-white'>
-        <h1 className='font-Poppins font-semibold text-3xl leading-[54px] text-black mx-auto'>Get In Touch With Us</h1>
-        <p className='w-[644px] h-[48px] font-Poppins font-normal text-base leading-6 text-center text-[#9F9F9F]'></p>
+      <div className='w-[1440px] h-[1144px]  bg-white mt-32 '>
+        <h1 className='w-[375px] font-Poppins font-semibold text-3xl leading-[54px] text-black  text-center mx-auto'>Get In Touch With Us</h1>
+        <p className='w-[644px] h-[48px] font-poppins font-normal text-base leading-6 text-center text-[#9F9F9F] mx-auto '>
+        For More Information About Our Product & Services. Please Feel Free To Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
+        </p>
+        <ContactForm/>
+        <Features/>
       </div>
-      <div>abcd</div>
-      <ContactForm/>
+      
+      
 
     </div>
   )

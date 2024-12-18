@@ -1,8 +1,8 @@
 const ContactForm = () => {
     return (
-      <div className="max-w-6xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Left Section: Contact Info */}
-        <div className="space-y-6">
+      <div className="w[1058px] h-[700px] p-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+        {/* Left Section Contact Info */}
+        <div className="space-y-6 mx-auto">
           {/* Address */}
           <div className="flex space-x-4">
             <span className="text-2xl text-gray-700">📍</span>
@@ -96,7 +96,7 @@ const ContactForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-yellow-500 text-white py-3 rounded-md hover:bg-yellow-600 transition"
+            className="w-[237px] h-[55px] border bg-[#B88E2F] text-white py-3 rounded-[5px] hover:bg-yellow-600 transition"
           >
             Submit
           </button>

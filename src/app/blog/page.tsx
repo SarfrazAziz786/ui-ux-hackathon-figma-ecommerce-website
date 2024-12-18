@@ -3,6 +3,7 @@ import Image from 'next/image'
 import shopbg from '@/app/assets/shop page/heroSection.png'
 import logo from '@/app/assets/Meubel House_Logos-05.jpg'
 import Link from 'next/link'
+import BlogPosts from '../components/blogList'
 
 
 const Blog = () => {
@@ -14,7 +15,7 @@ const Blog = () => {
             
 
         <div className="relative z-10 text-black">
-          <h1 className="text-3xl font-bold">Checkout</h1>
+          <h1 className="text-3xl font-bold">Blog</h1>
           <nav className="flex items-center justify-center space-x-2 mt-2 text-sm">
             <Link href="/" className="hover:underline text-black font-Poppins font-medium ">
               Home
@@ -24,6 +25,11 @@ const Blog = () => {
           </nav>
         </div>
       </div>
+
+    <div className='w-[1440px] h-[2710px] mx-auto mt-28' >
+    <BlogPosts/>
+    </div>
+
     </div>
   )
 }

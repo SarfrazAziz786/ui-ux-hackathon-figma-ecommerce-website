@@ -54,7 +54,6 @@ const Data1: Card1[] = [
 
 
 const ProductCard = () => {
-  let productpage="/productpage"
   return (
     <div className='sm:relative'>
         

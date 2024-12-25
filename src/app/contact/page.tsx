@@ -5,7 +5,6 @@ import logo from '@/app/assets/Meubel House_Logos-05.jpg'
 import Link from 'next/link'
 import ContactForm from '../components/ContactForm/contactForm'
 import Features from '../components/shoppageComponent/features'
-import { FaClock } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className='relative'>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 const cartItems = [
     {
       id: 1,
@@ -23,7 +24,7 @@ const cartItems = [
           {cartItems.map((item) => (
 
             <div key={(item.id)}>
-              <img src={item.image} alt={item.name} />
+              <Image src={item.image} alt={item.name} />
             
               <h2>{item.name}</h2>
               <p>Price: {item.price}</p>

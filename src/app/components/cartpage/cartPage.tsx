@@ -5,15 +5,16 @@ import deleteIcon from '@/app/assets/cart page/deleteIcon.png'
 import Link from "next/link";
 const CartPage = () => {
     return (
-<div className="    w-[1440px] h-[525px] bg-white  mt-[150px]  mx-auto    " >
+<div className="    sm:w-[1440px] h-[525px] bg-white    mx-auto  relative    " >
         
   
-  <div className="   w-[1240px] h-[390px]  flex  justify-between pt-20 mx-auto ">
+  <div className="  w-[500px] sm:w-[1240px] sm:h-[390px]  flex sm:flex-row flex-col  justify-between pt-20 sm:left-[100px] absolute ">
           {/* Cart Items Section */}
-          <div className="  w-[817px] h-[215px]  ">
+          
+          <div className="  sm:w-[817px] h-[215px] flex justify-between  ">
             <div className="  ">
-                <div className="bg-[#F9F1E7] px-60 py-2  font-Poppins font-medium text-base leading-6 w-[817px] h-[55px] text-black  space-x-20 ">
-                  <span >Product</span>
+                <div className="bg-[#F9F1E7] sm:w-[817px]  h-[55px] flex justify-around px-16 items-center  font-Poppins font-medium text-base leading-6  text-black  10 ">
+                  <span className="w-28 ml-2 sm:ml-11">Product</span>
                   <span >Price</span>
                   <span >Quantity</span>
                   <span >Subtotal</span>
@@ -22,26 +23,30 @@ const CartPage = () => {
                 
                 {/* Cart Item Row */}
                    
-                <div className="  flex items-center justify-between w-[792px]  ">
+                <div className="  flex items-center justify-around sm:w-[817px] gap-4 ">
                     <Image 
                       src={product}
                         alt={"Asgaard Sofa"}
-                      className="w-16 h-16 object-cover rounded ml-5 mt-2"
+                      className="w-16 h-16 object-cover rounded sm:ml-5 mt-2"
                     />
-                  <div className="w-[573px] h-[25px] font-Poppins font-normal text-base leading-6 flex  justify-between">
-                  <h2 className=" text-[#9F9F9F]">Asgaard Sofa</h2>
+                  <div className="sm:w-[573px]  h-[25px] font-Poppins font-normal text-base leading-6 flex  justify-between ">
+                  <h2 className=" text-[#9F9F9F] w-28">Asgaard Sofa</h2>
 
                   <h2 className=" text-[#9F9F9F]">Rs. 250,000.00</h2>
             
                     <input
                       type="number"
                       defaultValue={1}
-                      className="w-16 border rounded text-center text-black"
+                      className="sm:w-16 w-10 border rounded text-center text-black"
                     />
                   
                   <h2 className=" text-black">Rs. 250,000.00</h2>
                   
+                  </div>
+                  
+                  <div>
                   <Image src={deleteIcon} alt="deleteIcon" className=" w-[28px] h-[28px]" />
+
                   </div>
             </div>
           </div>
@@ -50,7 +55,7 @@ const CartPage = () => {
 
 
             {/* Cart Totals Section */}
-          <div className="bg-[#F9F1E7] p-6 space-y-6  rounded-lg shadow-md w-[393px] h-[390px]">
+          <div className="bg-[#F9F1E7] p-6 space-y-6  rounded-lg shadow-md sm:w-[393px] h-[390px]">
             <h2 className="font-Poppins text-[32px] leading-[48px] font-semibold text-black mb-4">Cart Totals</h2>
             <div className="flex justify-between font-Poppins   mb-3">
               <span className="text-black">Subtotal</span>

@@ -37,14 +37,14 @@ const features: Feature[] = [
 
 const Features = () => {
   return (
-    <div className="w-[1440px] h-[270px] flex justify-around items-center bg-[#FAF3EA] p-[100px] border border-gray-200 rounded-lg">
+    <div className="sm:w-[1440px] w-full sm:h-[270px] h-24 flex sm:justify-around items-center bg-[#FAF3EA] sm:p-[100px] border border-gray-200 rounded-lg">
       {features.map((feature, index) => (
         <div key={index}>
-          <div className="flex  items-center  space-y-2 max-w-xs">
-            <Image src={feature.image} alt={feature.title} className="w-[60px] h-[60px]" />
+          <div className="flex  items-center  sm:space-y-2 max-w-xs">
+            <Image src={feature.image} alt={feature.title} className="sm:w-[60px] sm:h-[60px] w-8" />
            <div>
-            <h3 className=" font-Poppins text-[25px] leading-[37.5px] font-semibold text-[#242424]">{feature.title}</h3>
-            <p className="font-Poppins font-medium text-xl leading-[30px] text-[#898989]">{feature.description}</p>
+            <h3 className=" font-Poppins sm:text-[25px] text-sm sm:leading-[37.5px] font-semibold text-[#242424]">{feature.title}</h3>
+            <p className="font-Poppins font-medium sm:text-xl text-xs sm:leading-[30px] text-[#898989]">{feature.description}</p>
             </div>
           </div>
         </div>

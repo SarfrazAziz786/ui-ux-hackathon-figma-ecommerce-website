@@ -9,9 +9,9 @@ import Features from '../components/shoppageComponent/features'
 
 const Cart = () => {
   return (
-    <div>
+    <div className='relative'>
     <div className="bg-cover bg-center h-64 flex flex-col items-center justify-center text-center">
-          <Image src={shopbg} alt='#' className='w-[1440px] h-[316px] top-[100px] opacity-[50%] absolute'/> 
+          <Image src={shopbg} alt='#' className='w-[1440px] h-[316px]  opacity-[50%] absolute'/> 
           <Image src={logo} alt='Meubel House' className='w-[50px] h-[32px] '/>
             
 
@@ -26,8 +26,12 @@ const Cart = () => {
           </nav>
         </div>
       </div>
+      <div >
       <CartPage/>
+      </div>
+      <div>
       <Features/>
+      </div>
     </div>
   )
 }

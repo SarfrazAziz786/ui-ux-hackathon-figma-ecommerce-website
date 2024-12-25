@@ -13,10 +13,10 @@ import Link from 'next/link';
 
 const ProductDetail = () => {
     return (
-      <div className="container mx-auto p-6 w-[1440px] h-[820px] bg-white">
-        <div className="grid grid-cols-12 gap-6">
+      <div className="container mx-auto p-6 sm:w-[1440px] sm:h-[744px] h-full sm:bg-white ">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-6  ">
           {/* Product Images */}
-          <div className="col-span-4 space-y-4">
+          <div className="col-span-2 space-y-4">
             {/* Thumbnail Images */}
             <div className="space-y-2 w-[553px] h-[500px] flex">
                 <div className='w-[76px] h-[416px] flex flex-col justify-between'>
@@ -25,7 +25,7 @@ const ProductDetail = () => {
                     <Image src={image4} alt="Thumbnail" className="w-full rounded-lg cursor-pointer" />
                     <Image src={image5} alt="Thumbnail" className="w-full rounded-lg cursor-pointer" />
                         </div>
-                <div className='w-[423px] h-[500px] rounded-[10px]'>
+                <div className='sm:w-[423px] w-[350px] h-[500px] rounded-[10px]'>
               <Image src={image1} alt="Thumbnail" className="w-[481px] h-[391px] rounded-lg cursor-pointer" />
               
               </div>
@@ -34,11 +34,11 @@ const ProductDetail = () => {
           </div>
   
           {/* Product Information */}
-          <div className="col-span-8 space-y-6 w-[606.01px] h-[730px] ml-56">
+          <div className="col-span-2 space-y-6 sm:w-[606.01px] h-[730px]  ">
             {/* Product Title */}
             <h1 className="text-[42px] leading-[63px] text-black font-normal font-Poppins">Asgaard Sofa</h1>
             {/* Price */}
-            <p className="font-Poppins text-2xl font-medium leading-9 text-[#9F9F9F]">Rs. 250,000.00</p>
+            <p className=" font-Poppins text-2xl font-medium leading-9 text-[#9F9F9F]">Rs. 250,000.00</p>
             {/* Ratings */}
             <div className="flex items-center space-x-2">
               <div className="flex text-yellow-500">
@@ -52,7 +52,7 @@ const ProductDetail = () => {
               <span className="text-[13px] leading-[19.5px] font-Poppins font-normal text-[#9F9F9F]">5 Customer Reviews</span>
             </div>
             {/* Description */}
-            <p className="text-black font-Poppins font-normal text-[13px] leading-[19.5px]">
+            <p className="text-black w-[424px] h-[80px]  font-Poppins font-normal text-[13px] leading-[19.5px]">
               Setting the bar as one of the loudest speakers in its class, the Asgaard sofa is
               compact and well-balanced, boosting clear midrange and extended highs for a
               wonderful sound.

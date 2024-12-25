@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const OrderSummary = () => {
     return (
-      <div className="w-[608px] h-[789px] mx-auto p-6 bg-white rounded-md shadow-md font-Poppins">
+      <div className="sm:w-[608px] w-[344px]  h-[789px]  sm:mx-auto p-6 sm:bg-white rounded-md shadow-md font-Poppins mx-auto">
         {/* Product Details */}
         <div className="mb-4 border-b pb-4">
           <div className="flex justify-between text-black mb-2 font-medium text-2xl leading-9">
@@ -71,7 +71,7 @@ const OrderSummary = () => {
         </p>
   
         {/* Place Order Button */}
-        <Link href={'/contact'}><button className="w-[318px] bg-white text-black py-2 rounded-[15px] hover:bg-black hover:text-white mx-20 border-2 border-black">
+        <Link href={'/contact'}><button className="sm:w-[318px] w-60 bg-white text-black py-2 rounded-[15px] hover:bg-black hover:text-white sm:mx-20 border-2 border-black">
           Place order
         </button></Link>
       </div>

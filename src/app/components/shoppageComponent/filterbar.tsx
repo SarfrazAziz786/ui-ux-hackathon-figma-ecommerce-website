@@ -6,7 +6,7 @@ import ViewList from '@/app/assets/shop page/ViewList.png'
 
 const FilterBar = () => {
     return (
-      <div className="bg-[#9F9F9F] p-4 flex items-center justify-between text-sm text-gray-700 sm:w-[1440px] sm:ml-[37px]  h-[100px] mt-[160px] sm:mt-[60px]  ">
+      <div className="bg-[#9F9F9F] p-4 flex items-center justify-between text-sm text-gray-700 sm:w-[1440px] sm:ml-[37px]  h-[100px]  sm:mt-[60px]  ">
         <div className="flex items-center ">
           <button className="flex items-center space-x-1 w-[130px] hover:bg-gray-100">
             

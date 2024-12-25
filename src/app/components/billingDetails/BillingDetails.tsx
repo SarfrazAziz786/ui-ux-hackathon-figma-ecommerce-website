@@ -2,9 +2,9 @@ import React from "react";
 
 const BillingDetails = () => {
     return (
-      <div className="w-[608px] h-[1200px]  p-6 bg-[#9F9F9F]   font-Poppins ">
+      <div className="sm:w-[608px] w-[344px] h-[1200px]  p-6  mx-auto  font-Poppins  ">
         <h2 className="text-4xl leading-[54px] font-semibold text-black mb-6">Billing details</h2>
-        <form>
+        <form className="space-y-20">
           {/* First Name & Last Name */}
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>

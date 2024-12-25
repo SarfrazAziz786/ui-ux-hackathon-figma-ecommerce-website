@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const ProductTabs = () => {
   return (
-    <div className="   w-[90rem] h-[46.5rem] bg-white ">
+    <div className="   sm:w-[90rem] sm:h-[46.5rem] h-full bg-white relative  mt-12">
       {/* Tabs */}
-      <div className="flex border-b border-gray-300 w-[40.5625rem] h-[2.25rem] font-Poppins font-medium text-2xl leading-9 m-auto ">
+      <div className="flex border-b border-gray-300 sm:w-[649px] w-full h-[36px] font-Poppins font-medium sm:text-2xl text-base leading-9 m-auto ">
         <button className="px-6 py-2   border-black text-black">
           Description
         </button>
@@ -18,9 +18,9 @@ const ProductTabs = () => {
       </div>
 
       {/* Content */}
-      <div className="py-6 space-y-4 w-[1026px] font-Poppins font-normal text-base leading-6 text-justify text-[#9F9F9F] mx-24">
+      <div className="sm:w-[1026px] sm:h-[174px] px-2 py-6 space-y-4  font-Poppins font-normal text-base leading-6 text-justify text-[#9F9F9F] mx-auto">
         {/* Description Section */}
-        <p >
+        <p>
           Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn
           portable active stereo speaker takes the unmistakable look and sound
           of Marshall, unplugs the chords, and takes the show on the road.
@@ -33,9 +33,9 @@ const ProductTabs = () => {
           highs for a sound that is both articulate and pronounced.
         </p>
         {/* Product Images */}
-        <div className="grid grid-cols-2 gap-4 w-[1239px] h-[348px]  ">
-          <Image src={product1} alt="#" className="w-[605px] h-[348px] bg-pink-50"/>
-          <Image src={product2} alt="#" className="w-[605px] h-[348px] bg-pink-50"/>
+        <div className="grid sm:grid-cols-2  gap-3 sm:w-[1239px] h-[348px] sm:left-[100px] sm:absolute ">
+          <Image src={product1} alt="#" className="sm:w-[605px] h-[348px] bg-pink-50"/>
+          <Image src={product2} alt="#" className="sm:w-[605px] h-[348px] bg-pink-50"/>
         </div>
       </div>
     </div>

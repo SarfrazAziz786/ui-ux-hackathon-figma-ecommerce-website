@@ -1,11 +1,15 @@
+import { FaClock, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import React from 'react';
+
 const ContactForm = () => {
     return (
-      <div className="w[1058px] h-[700px] p-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="w[1058px] sm:h-[700px] h-[900px] p-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
         {/* Left Section Contact Info */}
         <div className="space-y-6 mx-auto">
           {/* Address */}
           <div className="flex space-x-4">
-            <span className="text-2xl text-gray-700">📍</span>
+            <span className="text-2xl text-gray-700"><FaMapMarkerAlt />
+            </span>
             <div>
               <h3 className="font-semibold text-lg">Address</h3>
               <p className="text-gray-600">
@@ -16,7 +20,7 @@ const ContactForm = () => {
   
           {/* Phone */}
           <div className="flex space-x-4">
-            <span className="text-2xl text-gray-700">📞</span>
+            <span className="text-2xl text-gray-700"><FaPhoneAlt /></span>
             <div>
               <h3 className="font-semibold text-lg">Phone</h3>
               <p className="text-gray-600">
@@ -28,7 +32,7 @@ const ContactForm = () => {
   
           {/* Working Time */}
           <div className="flex space-x-4">
-            <span className="text-2xl text-gray-700">⏰</span>
+            <span className="text-2xl text-gray-700"><FaClock /></span>
             <div>
               <h3 className="font-semibold text-lg">Working Time</h3>
               <p className="text-gray-600">

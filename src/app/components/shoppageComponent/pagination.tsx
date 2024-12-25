@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pagination = () => {
     return (
-      <div className="flex items-center space-x-2">
+      <div className="  flex justify-center sm:w-[392px] h-[90px] sm:p-[30px] sm:gap-[38px] gap-[20px]">
         {/* Page 1 (Active) */}
         <button className="w-10 h-10 bg-yellow-500 text-white font-bold rounded border border-yellow-500">
           1

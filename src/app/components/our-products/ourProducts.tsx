@@ -15,7 +15,7 @@ export default function OurProducts() {
 
         <ProductCard2/>
 
-        <button className=" absolute text-[#B88E2F] p-2 border-[1px] border-[#B88E2F] w-[245px] h-[48px] sm:top-[2800px]    sm:left-[598px] left-[100px]
+        <button className=" absolute text-[#B88E2F] p-2 border-[1px] border-[#B88E2F] w-[245px] h-[48px] sm:top-[2800px]  mt-8  sm:left-[598px] left-[100px]
                             font-Poppins font-semibold text-base leading-6">Show More</button>
       </div>
     </>

@@ -81,7 +81,7 @@ const ProductCard = () => {
             </div>
           </div> */}
 
-              <div className="font-Poppins text-white sm:absolute inset-0 bg-black  flex flex-col justify-center items-center opacity-0 hover:opacity-70  ">
+              <div className="font-Poppins text-white sm:absolute inset-0 bg-black  flex flex-col justify-center items-center opacity-0 hover:opacity-[72%]  ">
             <Link href={"/productpage"}>
             <button className="w-[202px] h-[48px] bg-white text-[#B88E2F]  font-semibold py-2 px-6 rounded shadow  "
                                  >

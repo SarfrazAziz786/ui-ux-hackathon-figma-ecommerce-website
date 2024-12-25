@@ -6,6 +6,9 @@ import product6 from '@/app/assets/products/product-6.png';
 import product7 from '@/app/assets/products/product-7.png';
 import product8 from '@/app/assets/products/product-8.png';
 import Link from 'next/link';
+import { CiShare2 } from 'react-icons/ci';
+import { MdOutlineCompareArrows } from 'react-icons/md';
+import { FaHeart } from 'react-icons/fa6';
 
 interface Card2 {
     title: string;
@@ -71,7 +74,24 @@ const productCard2 = () => {
             </div>
           </div>
                */}
-              
+              <div className="font-Poppins text-white sm:absolute inset-0 bg-black  flex flex-col justify-center items-center opacity-0 hover:opacity-[72%]  ">
+            <Link href={"/productpage"}>
+            <button className="w-[202px] h-[48px] bg-white text-[#B88E2F]  font-semibold py-2 px-6 rounded shadow  "
+                                 >
+              Add to Cart
+            </button></Link>
+            <div className="w-[252px] h-[24px] flex  justify-between mt-4 text-white">
+            <><span><CiShare2 /></span> <button className="hover:text-yellow-500 text-sm">
+              Share</button></>
+              <>
+              <span><MdOutlineCompareArrows />
+              </span>              <button className="hover:text-yellow-500 text-sm">Compare</button></>
+              <>
+              <span><FaHeart /></span> <button className="hover:text-yellow-500 text-sm">Like</button>
+              </>
+            </div>
+          </div>
+
               <div className=" w-[285px] h-[145px] top-[301px] flex flex-col ">
                 <h1 className="w-[123px] h-[29px] top-[317px] left-[16px]">{card.title}</h1>
                 <p className="w-[200px] h-[24px] top-[346px] left-[16px] ">{card.disc}</p>

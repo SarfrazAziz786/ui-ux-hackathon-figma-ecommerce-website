@@ -16,3 +16,5 @@ Key Features:
 
 - Responsive design across devices
 - Essential pages: home, product listings, product details, checkout, and order confirmation
+
+PDF: https://github.com/SarfrazAziz786/ui-ux-hackathon-figma-ecommerce-website/blob/main/Hackathon-Technical-Planning.pdf

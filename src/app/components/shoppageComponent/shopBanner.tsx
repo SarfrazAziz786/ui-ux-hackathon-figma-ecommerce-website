@@ -5,14 +5,14 @@ import Image from "next/image"
 const ShopBanner = () => {
     return (
       <div>
-      <div className="bg-cover bg-center sm:h-64 h-96 flex flex-col items-center justify-center text-center">
-          <Image src={shopbg} alt='#' className='w-[1440px] h-[316px] sm:top-[100px] opacity-[50%] top-[50px] absolute'/> 
+      <div className="bg-cover bg-center sm:h-64 h-96 flex flex-col items-center justify-center text-center relative">
+          <Image src={shopbg} alt='#' className='w-[1440px] h-[316px] mt-20 opacity-[50%]  '/> 
         
   
         
         
 
-        <div className="relative z-10 text-black my-auto">
+        <div className=" z-10 text-black absolute ">
           
           <h1 className="text-3xl font-bold">Shop</h1>
           <nav className="flex items-center justify-center space-x-2 mt-2 text-sm">

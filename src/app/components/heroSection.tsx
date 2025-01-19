@@ -5,12 +5,12 @@ import interiormockup from '@/app/assets/herosection.jpeg'
 const HeroSection = () => {
   return (
     
-      <div className=" w-[1440px] sm:h-[716.83px] left-0 sm:top-[95.7px] top-[50px]  flex flex-row h-[380px]">
+      <div className=" sm:w-[1440px] sm:h-[716.83px]   flex flex-row h-[380px] relative">
 
-        <Image src={interiormockup}  alt='interior-mockup'  className=' sm:w-[1440px] sm:h-[1007.93px] sm:top-[-75px] w-[100vw]  '/>
+        <Image src={interiormockup}  alt='interior-mockup'  className=' sm:w-[1440px] sm:h-[1007.93px]  w-[100vw]  '/>
           
           
-          <div className="absolute sm:w-[643px] sm:h-[443px] sm:left-[739px] sm:top-[253px] w-[170px] h-[280px] right-7 top-[50px]  
+          <div className="absolute sm:w-[643px] sm:h-[443px] sm:left-[739px] sm:top-[253px]  h-[280px] sm:right-7 right-3  top-[20px]  
                           rounded-[10px] bg-[#FFF3E3] flex justify-around items-center  ">
                 
                 <div className="  sm:w-[561px] sm:h-[344px] sm:left-[778px] sm:top-[315px] w-[180px] h-[220px] gap-2  
